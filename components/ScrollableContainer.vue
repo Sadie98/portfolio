@@ -10,5 +10,6 @@ import Highlights from "~/components/Highlights.vue";
       PhotoHeader
       Highlights
       Separator
+      Experience
 </template>
 
