@@ -1,19 +1,12 @@
-<script setup lang="ts">
-
-</script>
-
-<template>
-  <header class="hero-section">
-    <img data-speed=".6" class="hero" src="../static/images/main_photo.png" alt="Alt" >
-    <div class="container">
-      <p data-speed=".75" class="main-header">
-        <h1 class="main-title">Your experienced Frontend Developer Uliana Stiagailo</h1>
-      </p>
-    </div>
-  </header>
+<template lang="pug">
+  header.hero-section
+    img.hero("data-speed"=".6" src="../static/images/main_photo.png" alt="Alt")
+    .container
+      p.main-header("data-speed"=".75")
+        h1.main-title Your experienced Frontend Developer Uliana Stiagailo
 </template>
 
-<style  scoped>
+<style scoped>
 .hero {
   width: calc(var(--index) * 36);
   position: absolute;
@@ -34,5 +27,4 @@
   top: 25vh;
   line-height: .9;
 }
-
 </style>

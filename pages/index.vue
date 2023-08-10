@@ -30,8 +30,8 @@ onMounted(() => {
 
 </script>
 
-<template>
-  <ScrollableContainer />
+<template lang="pug">
+  ScrollableContainer
 </template>
 
 <style>

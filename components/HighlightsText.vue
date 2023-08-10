@@ -1,18 +1,15 @@
-<script setup lang="ts">
+<template lang="pug">
+  .text-block.gallery__item
+    h2.text-block__h {{ header }}
+    p.text-block__p {{ text }}
+</template>
 
+<script setup lang="ts">
 const props = defineProps<{
   header: string;
   text: string;
 }>();
-
 </script>
-
-<template>
-  <div class="text-block gallery__item">
-    <h2 class="text-block__h">{{ header }}</h2>
-    <p class="text-block__p">{{ text }}</p>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 .text-block {
