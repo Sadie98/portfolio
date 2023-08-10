@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { gsap } from "gsap";
-import {onMounted} from "vue";
+import gsap from "../static/libs/gsap/gsap.min.js";
+import ScrollTrigger from "../static/libs/gsap/ScrollTrigger.min.js";
 import HighlightsText from "./HighlightsText.vue";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { onMounted } from "vue";
 
 onMounted(() => {
   if (ScrollTrigger.isTouch === 1) return;

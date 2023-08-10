@@ -13,6 +13,3 @@ import Highlights from "~/components/Highlights.vue";
   </div>
 </template>
 
-<style scoped>
-
-</style>
