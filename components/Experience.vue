@@ -5,21 +5,26 @@
         .gallery__left("data-speed"=".9")
           img(ref="kms1Img").gallery__item(src="../static/images/kms.png" alt="kms-lighthouse")
           img(ref="kms2Img").gallery__item(src="../static/images/kms_team.jpeg" alt="kms-team")
-          HighlightsText(
-            header=""
-            text=""
-          )
           h1(:style="stcMargin") Special Technology Center
-          job(
+          job.sibling(
             title="Frontend web developer"
             period="Mar 2020 - Mar 2021 · 1 yr 1 mo"
             location="Saint Petersburg, Russia"
             :description="stc"
             skills="storybook · Open API · Vue.js · Vuex · linux"
           )
+          img.gallery__item(src="../static/images/cit.png" alt="cit")
+          h1.gallery__item Topvisor
+          job.sibling(
+            title="Full Stack Engineer"
+            period="Feb 2018 - Sep 2019 · 1 yr 8 mos"
+            location="Saint Petersburg, Russia"
+            :description="topvisor"
+            skills="PHP 7 · Full-Stack Development · MySQL · Data Architecture · ClickHouse · jQuery"
+          )
 
         .gallery__right(data-speed="1.1")
-          h1.gallery__item KMS Lighthouse
+          h1 KMS Lighthouse
           job(ref="kms1Text").sibling(
             title="R&D Team Lead & Frontend developer"
             period="Oct 2022 - Jul 2023 · 10 mos"
@@ -42,13 +47,23 @@
             skills="Jest · Pinia · Front-End Development · Code Review · Interviewing · Vue.js"
           )
           img.gallery__item(src="../static/images/stc.png" alt="stc")
+          h1.gallery__item Center of Innovate Technologies
+          job.sibling(
+            title="Full Stack Engineer"
+            period="Sep 2019 - Mar 2020 · 7 mos"
+            location="Saint Petersburg, Russia"
+            :description="cit"
+            skills="Full-Stack Development · Vue.js · Laravel · PHP"
+          )
+          img.gallery__item.topvisor(src="../static/images/topvisor.png" alt="topvisor")
+
 
 </template>
 
 <script setup lang="ts">
 import HighlightsText from "./HighlightsText.vue";
 import useScrollTrigger from "../composables/useScrollTrigger";
-import { kms3, kms2, kms1, stc } from "../static/texts/jobDescriptions";
+import { kms3, kms2, kms1, stc, cit, topvisor } from "../static/texts/jobDescriptions";
 import {nextTick, onMounted, ref} from "vue";
 
 useScrollTrigger();
@@ -59,20 +74,16 @@ let kms3Text = ref(null);
 let stcMargin = ref('');
 
 onMounted(() => {
-  nextTick(() => {
     const kmsTextHeight = kms1Text.value.$el.clientHeight + kms2Text.value.$el.clientHeight + kms3Text.value.$el.clientHeight;
     const kmsImagesHeight = "calc(var(--index) * 21) * 2 + var(--gallery-gap)";
 
-    stcMargin.value = `margin-top: calc(${kmsTextHeight}px - (${kmsImagesHeight}))`;
-  })
-
+    stcMargin.value = `margin-top: calc(${kmsTextHeight}px + calc(var(--gallery-gap)*2) - (${kmsImagesHeight}))`;
 });
 </script>
 
 <style lang="scss" scoped>
 .gallery {
   display: flex;
-  padding: calc(var(--index) * 8) 0;
 
   & > * {
     flex: 1;
@@ -101,6 +112,10 @@ onMounted(() => {
   }
   .extra-margin {
     margin-top: calc(var(--gallery-gap));
+  }
+
+  .topvisor {
+    margin-top: calc(var(--gallery-gap)*2.5);
   }
 }
 </style>

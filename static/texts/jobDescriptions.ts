@@ -25,3 +25,19 @@ export const kms1 = "Legacy: xsl, jsp, JQuery, IE11. Project configuration (Babe
 export const stc = "Frontend development: Vue, TypeScript, Pug, Storybook, sass, Git flow<br/>" +
   "Take part in state-important project. Development in strong frontend team according to<br/>" +
   "the latest frontend standards. A lot of work with drawing graphs using D3. Used openapi generator to make strong contract with BE using swagger.";
+
+export const cit = "Frontend development: Vue, Vuex, Vue-router, JQuery<br/>" +
+  "Backend development: PHP, Laravel, MDM (https://trinidata.ru/mdm_archigraph.htm)<br/>" +
+  "Implemented Vue in socially important, but outdated project. Participated in development<br/>" +
+  "of famous Saint-Petersburg and Chelyabinsk project – Safe city";
+
+export const topvisor = "Adaptive layout: media queries, flex CSS3, HTML5.<br/>" +
+  "Frontend development: JavaScript, jQuery. Designing, writing code.<br/>" +
+  "Backend development: API Topvisor - a self-written PHP-project. Software architecture,<br/>" +
+  "implementation.<br/>" +
+  "DBMS: ClickHouse, MariaDB. Design, creation of databases, tables, table<br/>" +
+  "optimization, query optimization.<br/>" +
+  "I refactored the databases for the Watcher, Audit, Indexing modules.<br/>" +
+  "Section of the site \"The domain registrar\" by February 2020 was completed by me in<br/>" +
+  "full (study of documentation, standards, system design, backend development,<br/>" +
+  "database design, query optimization, frontend development, adaptive layout).";

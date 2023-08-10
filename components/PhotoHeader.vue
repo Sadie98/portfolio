@@ -3,7 +3,8 @@
     img.hero("data-speed"=".6" src="../static/images/main_photo.png" alt="Alt")
     .container
       p.main-header("data-speed"=".75")
-        h1.main-title Your experienced Frontend Developer Uliana Stiagailo
+        h1.main-title.title-1 Your experienced Frontend Developer
+        h1.main-title.title-2 Uliana Stiagailo
 </template>
 
 <style scoped>
@@ -24,7 +25,12 @@
   font-size: calc(var(--index) * 4);
   position: absolute;
   width: min-content;
-  top: 25vh;
   line-height: .9;
+}
+.title-1 {
+  top: 15vh;
+}
+.title-2 {
+  top: 60vh;
 }
 </style>

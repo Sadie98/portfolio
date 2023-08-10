@@ -11,5 +11,6 @@ import Highlights from "~/components/Highlights.vue";
       Highlights
       Separator
       Experience
+      Footer
 </template>
 
