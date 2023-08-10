@@ -9,5 +9,6 @@ import Highlights from "~/components/Highlights.vue";
     .content
       PhotoHeader
       Highlights
+      Separator
 </template>
 
