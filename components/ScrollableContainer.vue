@@ -3,8 +3,10 @@
 import PhotoHeader from "~/components/PhotoHeader.vue";
 import Highlights from "~/components/Highlights.vue";
 import { ref } from "vue";
+// @ts-ignore
+import ScrollTrigger from "../static/libs/gsap/ScrollTrigger.min.js";
 
-const isMobile = ref(globalThis.innerWidth <= 500);
+const isMobile = ref(ScrollTrigger.isTouch === 1);
 
 </script>
 <template lang="pug">
