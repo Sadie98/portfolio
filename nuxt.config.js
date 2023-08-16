@@ -48,5 +48,11 @@ export default {
         implementation: require('sass'),
       },
     },
+  },
+
+  resolve: {
+    alias: {
+      '@': '/'
+    }
   }
 }

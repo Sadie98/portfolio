@@ -29,6 +29,7 @@ const props = defineProps<{
     line-height: 2.4rem;
     color: var(--color-header);
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   &__period {
@@ -37,14 +38,6 @@ const props = defineProps<{
 
   &__location, &__description {
     margin-bottom: 25px;
-  }
-
-  &__description {
-
-  }
-
-  &__skills {
-
   }
 }
 </style>
